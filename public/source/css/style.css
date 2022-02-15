@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Karla';
+    src: URL('../fonts/Karla-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Karla';
+    color: #C2C5AA;
+    background-color: #333D29;
+}
