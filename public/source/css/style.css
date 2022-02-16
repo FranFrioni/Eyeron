@@ -8,3 +8,36 @@ body {
     color: #C2C5AA;
     background-color: #333D29;
 }
+#divLoginSignUp {
+    background-color: #414833;
+}
+
+.logo {
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite, appear 500ms ease-in;
+}
+
+.appear {
+	animation: appear 500ms ease-in;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-8px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
