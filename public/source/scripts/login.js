@@ -32,6 +32,7 @@ async function logIn(){
             //GUARDAR EN LOCAL STORAGE
             document.getElementById("divLogInSignUp").classList.add("d-none");
             document.getElementById("divMainGame").classList.remove("d-none");
+            document.getElementById("navMainGame").classList.remove("d-none");
         }
     }
 }
@@ -60,6 +61,7 @@ async function signUp(){
         } else {
             document.getElementById("divLogInSignUp").classList.add("d-none");
             document.getElementById("divMainGame").classList.remove("d-none");
+            document.getElementById("navMainGame").classList.remove("d-none");
         }
     }
 }

@@ -2,14 +2,70 @@
     font-family: 'Karla';
     src: URL('../fonts/Karla-Regular.ttf') format('truetype');
 }
-
 body {
     font-family: 'Karla';
     color: #C2C5AA;
-    background-color: #333D29;
+    background-image: url("../img/index/background.jpg");
+    background-size: 25%;
 }
-#divLogInSignUp {
-    background-color: #414833;
+@media (min-width:765px) {
+    #divLogInSignUp {
+        background-color: rgb(65, 72, 51, 0.80);
+        border-radius: 5%;
+    }   
+
+    @keyframes float {
+        0% {
+            transform: translatey(0px);
+        }
+        50% {
+            transform: translatey(-8px);
+        }
+        100% {
+            transform: translatey(0px);
+        }
+    }
+    
+    @keyframes appear {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}
+@media (max-width:764px){
+
+    body{
+        background-size: 70%;
+    }
+
+    #divLogIn, #divSignUp, #divImagesCarousel, #divLogo{
+        border-radius: 5%;
+        background-color: rgb(65, 72, 51, 0.80);
+    }
+
+    @keyframes float {
+        0% {
+            transform: translatey(0px);
+        }
+        50% {
+            transform: translatey(-4px);
+        }
+        100% {
+            transform: translatey(0px);
+        }
+    }
+    
+    @keyframes appear {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
 }
 
 .logo {
@@ -19,25 +75,4 @@ body {
 
 .appear {
 	animation: appear 500ms ease-in;
-}
-
-@keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-8px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
-}
-
-@keyframes appear {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
 }
